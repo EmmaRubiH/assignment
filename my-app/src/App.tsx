@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './index.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Loading from './components/Loading';
