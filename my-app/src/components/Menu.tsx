@@ -1,20 +1,21 @@
-import { DataNode } from "../interfaces";
-import SubMenu from "./SubMenu";
+import SubMenu from './SubMenu';
+import { DataNode } from '../interfaces';
 
 type MenuProps = {
-    data: DataNode[];
+  data: DataNode[];
 };
 
-const SideBar = (props: MenuProps) => {
-    return (
-        <>
-         <div className="w-250 bg-grey-800 flex-shrink-0 h-full overflow-auto">
-            {props.data.map((item, index) => (
-                <SubMenu key={index} item={item} />
-            ))}
-         </div>
-        </>
-    );
+const Sidebar = (props: MenuProps) => {
+  
+  return (
+    <>
+      <div className='w-250 bg-orange-800 flex-shrink-0 h-full overflow-auto'>
+        {props.data.map((item, index) => (
+          <SubMenu key={index} item={item}  />
+        ))}
+      </div>
+    </>
+  );
 };
 
-export default SideBar;
+export default Sidebar;

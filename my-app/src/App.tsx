@@ -8,6 +8,9 @@ import { ForgotPassword, Login, Register, ResetPassword } from './pages/Account'
 import { Contact, Facebook, Twitter } from './pages/Contact';
 import { Home } from './pages/Home';
 import Users from './pages/Users';
+import { Notifications } from './pages/Notifications';
+
+
 
 const starterData: DataNode[] = [
   {
@@ -91,6 +94,10 @@ function App() {
             <Route
               path='profile/settings/account/reset-password'
               element={<ResetPassword />}
+            />
+            <Route
+              path='profile/settings/notifications'
+              element={<Notifications />}
             />
         </Routes>
         </div>

@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Header from './components/Header';
 
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
